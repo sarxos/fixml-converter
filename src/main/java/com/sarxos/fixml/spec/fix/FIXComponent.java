@@ -12,33 +12,36 @@ public class FIXComponent {
 
 	@XmlElement(name = "ComponentName")
 	private String name;
-	
+
 	@XmlElement(name = "ComponentType")
 	private String type;
-	
+
 	@XmlElement(name = "Category")
 	private String category;
-	
+
 	@XmlElement(name = "MsgID")
-	private String id;
-	
+	private int id;
+
 	@XmlElement(name = "AbbrName")
 	private String abbr;
-	
+
 	@XmlElement(name = "NotReqXML")
 	private int notRequiredXML;
-	
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public String getAbbr() {
 		return abbr;
 	}
-	
+
 	@Override
 	public String toString() {
 		return new StringBuffer(getName()).append('[').append(getAbbr()).append(']').toString();
+	}
+
+	public int getID() {
+		return id;
 	}
 }

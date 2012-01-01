@@ -21,6 +21,15 @@ public class FIXMLField extends FIXMLElement {
 	@XmlAttribute
 	private String required;
 
+	@XmlAttribute
+	private int number;
+
+	private String type;
+
+	public int getNumber() {
+		return number;
+	}
+
 	/**
 	 * @return Field name
 	 */

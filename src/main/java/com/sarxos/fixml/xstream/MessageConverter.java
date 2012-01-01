@@ -9,6 +9,7 @@ import com.sarxos.fixml.spec.Spec;
 import com.sarxos.fixml.spec.fix.FIXComponent;
 import com.sarxos.fixml.spec.fix.FIXField;
 import com.sarxos.fixml.spec.fix.FIXMessageType;
+import com.sarxos.fixml.spec.ml.FIXMLComponent;
 import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
 import com.sarxos.fixml.spec.ml.FIXMLMessage;
@@ -56,7 +57,7 @@ public class MessageConverter implements Converter {
 			if (element instanceof FIXMLField) {
 
 				FIXMLField field = (FIXMLField) element;
-				FIXField fixField = spec.getFIXFieldsMapping().get(field.getName());
+				FIXField fixField = fieldsMapping.get(field.getName());
 				String abbr = fixField.getAbbr();
 
 				if (message.isSetField(fixField.getTag())) {
@@ -73,6 +74,11 @@ public class MessageConverter implements Converter {
 						throw new RuntimeException("Required field " + fixField + " is missing in message " + name);
 					}
 				}
+			} else if (element instanceof FIXMLComponent) {
+
+				FIXMLComponent component = (FIXMLComponent) element;
+				FIXComponent fixComponent = componentsMapping.get(component.getName());
+				System.out.println(message.getGroups(267));
 			}
 		}
 
