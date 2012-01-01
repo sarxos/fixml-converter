@@ -14,7 +14,7 @@ public class FIXComponent {
 	private String name;
 
 	@XmlElement(name = "ComponentType")
-	private String type;
+	private FIXComponentType type;
 
 	@XmlElement(name = "Category")
 	private String category;
@@ -43,5 +43,9 @@ public class FIXComponent {
 
 	public int getID() {
 		return id;
+	}
+
+	public FIXComponentType getType() {
+		return type;
 	}
 }

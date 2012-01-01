@@ -12,6 +12,7 @@ import quickfix.field.Symbol;
 import quickfix.fix50.MarketDataRequest;
 import quickfix.fix50.MarketDataRequest.NoMDEntryTypes;
 import quickfix.fix50.MarketDataRequest.NoRelatedSym;
+import quickfix.fix50.component.Instrument;
 
 import com.sarxos.fixml.FIXMLConverter;
 
@@ -51,16 +52,20 @@ public class ExampleMarketDataRequest {
 		// add symbols
 		NoRelatedSym symbols = new NoRelatedSym();
 
+		Instrument instr = new Instrument();
+
 		// KGHM SA
-		symbols.set(new Symbol("KGHM")); // symbol
-		symbols.set(new SecurityID("PLKGH200001")); // ISIN
-		symbols.set(new SecurityIDSource(SecurityIDSource.ISIN_NUMBER));
+		instr.set(new Symbol("KGHM")); // symbol
+		instr.set(new SecurityID("PLKGH200001")); // ISIN
+		instr.set(new SecurityIDSource(SecurityIDSource.ISIN_NUMBER));
+		symbols.set(instr);
 		req.addGroup(symbols);
 
 		// MCI Management
-		symbols.set(new Symbol("MCI")); // symbol
-		symbols.set(new SecurityID("PLMCI000AAX")); // ISIN
-		symbols.set(new SecurityIDSource(SecurityIDSource.ISIN_NUMBER));
+		instr.set(new Symbol("MCI")); // symbol
+		instr.set(new SecurityID("PLMCI000AAX")); // ISIN
+		instr.set(new SecurityIDSource(SecurityIDSource.ISIN_NUMBER));
+		symbols.set(instr);
 		req.addGroup(symbols);
 
 		// convert FIX login message to proper FIXML form

@@ -1,10 +1,8 @@
 package com.sarxos.fixml.xstream;
 
-import quickfix.FieldNotFound;
 import quickfix.Group;
 
 import com.sarxos.fixml.spec.fix.FIXComponent;
-import com.sarxos.fixml.spec.fix.FIXField;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
 import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
@@ -31,37 +29,21 @@ public class GroupConverter extends AbstractConverter {
 	public void marshal(Object source, HierarchicalStreamWriter writer, MarshallingContext context) {
 
 		GroupWrapper wrapper = (GroupWrapper) source;
-		FIXMLGroup ggroup = wrapper.getGroup();
+		FIXMLGroup mlGroup = wrapper.getGroup();
 		Group fixGroup = wrapper.getFIXGroup();
 
-		for (FIXMLElement element : ggroup.getElements()) {
+		for (FIXMLElement element : mlGroup.getElements()) {
 			if (element instanceof FIXMLField) {
-
-				FIXMLField field = (FIXMLField) element;
-				FIXField fixField = getFieldsMapping().get(field.getName());
-				System.out.println(field.getName());
-				String abbr = fixField.getAbbr();
-
-				if (fixGroup.isSetField(fixField.getTag())) {
-					try {
-						writer.addAttribute(abbr, fixGroup.getString(fixField.getTag()));
-					} catch (FieldNotFound e) {
-						if (field.isRequired()) {
-							throw new RuntimeException("Required field " + fixField + " is missing in group " + ggroup, e);
-						}
-						// ignore non required fields
-					}
-				} else {
-					if (field.isRequired()) {
-						throw new RuntimeException("Required field " + fixField + " is missing in group " + ggroup);
-					}
-				}
+				marshalField(fixGroup, element, writer);
 			} else if (element instanceof FIXMLComponent) {
 
 				FIXMLComponent component = (FIXMLComponent) element;
 				FIXMLComponent descriptor = getSchema().getComponentByName(component.getName());
+				FIXComponent fixComponent = getComponentsMapping().get(component.getName());
 
 				if (descriptor.isGroup()) {
+
+					// group case
 
 					FIXMLGroup group = FIXMLComponent.toGroup(descriptor);
 					FIXMLField field = getSchema().getFieldByName(group.getName());
@@ -75,13 +57,28 @@ public class GroupConverter extends AbstractConverter {
 					// marshal all groups
 					for (Group g : fixGroup.getGroups(field.getNumber())) {
 
-						FIXComponent fixComponent = getComponentsMapping().get(component.getName());
 						String abbr = fixComponent.getAbbr();
 
 						writer.startNode(abbr);
 						context.convertAnother(new GroupWrapper(g, group));
 						writer.endNode();
 					}
+
+				} else {
+
+					// component case
+
+					String abbr = fixComponent.getAbbr();
+
+					writer.startNode(abbr);
+
+					FIXMLComponent innerComponent = getSchema().getComponentByName(fixComponent.getName());
+
+					// fixGroup.getField(new Instrument());
+
+					// writer.startNode(abbr);
+					// context.convertAnother(new GroupWrapper(g, group));
+					writer.endNode();
 				}
 			} else {
 				throw new RuntimeException("Class " + element.getClass() + " should not be present!");

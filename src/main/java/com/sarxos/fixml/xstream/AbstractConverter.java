@@ -2,12 +2,18 @@ package com.sarxos.fixml.xstream;
 
 import java.util.Map;
 
+import quickfix.FieldMap;
+import quickfix.FieldNotFound;
+
 import com.sarxos.fixml.spec.Spec;
 import com.sarxos.fixml.spec.fix.FIXComponent;
 import com.sarxos.fixml.spec.fix.FIXField;
 import com.sarxos.fixml.spec.fix.FIXMessageType;
+import com.sarxos.fixml.spec.ml.FIXMLElement;
+import com.sarxos.fixml.spec.ml.FIXMLField;
 import com.sarxos.fixml.spec.ml.FIXMLSchema;
 import com.thoughtworks.xstream.converters.Converter;
+import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 
 
 public abstract class AbstractConverter implements Converter {
@@ -39,5 +45,28 @@ public abstract class AbstractConverter implements Converter {
 
 	public Map<String, FIXField> getFieldsMapping() {
 		return fieldsMapping;
+	}
+
+	protected void marshalField(FieldMap message, FIXMLElement element, HierarchicalStreamWriter writer) {
+
+		FIXMLField field = (FIXMLField) element;
+		String name = message.getClass().getSimpleName();
+		FIXField fixField = getFieldsMapping().get(field.getName());
+
+		if (message.isSetField(fixField.getTag())) {
+			String abbr = fixField.getAbbr();
+			try {
+				writer.addAttribute(abbr, message.getString(fixField.getTag()));
+			} catch (FieldNotFound e) {
+				if (field.isRequired()) {
+					throw new RuntimeException("Required field " + fixField + " is missing in message " + name, e);
+				}
+				// ignore non required fields
+			}
+		} else {
+			if (field.isRequired()) {
+				throw new RuntimeException("Required field " + fixField + " is missing in message " + name);
+			}
+		}
 	}
 }
