@@ -3,6 +3,7 @@ package com.sarxos.fixml;
 import quickfix.Message;
 
 import com.sarxos.fixml.spec.ml.FIXMLRoot;
+import com.sarxos.fixml.xstream.GroupConverter;
 import com.sarxos.fixml.xstream.MessageConverter;
 import com.sarxos.fixml.xstream.RootConverter;
 import com.thoughtworks.xstream.XStream;
@@ -17,36 +18,38 @@ public class FIXMLConverter {
 
 	private static boolean initialized = false;
 	private static XStream xstream = null;
-	
+
 	public FIXMLConverter() {
 	}
 
 	/**
 	 * Perform converter initialization. This operation is time consuming, so
-	 * you can call this before you start conversion, otherwise this will be called 
-	 * before first conversion and due to that you can notice some delay in this case.
+	 * you can call this before you start conversion, otherwise this will be
+	 * called before first conversion and due to that you can notice some delay
+	 * in this case.
 	 * 
 	 * @return true if converter has been initialized, false otherwise
 	 */
 	public static synchronized boolean initialize() {
-		
+
 		if (initialized) {
 			return false;
 		}
-		
+
 		xstream = new XStream();
 		xstream.processAnnotations(FIXMLRoot.class);
+		xstream.registerConverter(new GroupConverter());
 		xstream.registerConverter(new MessageConverter());
 		xstream.registerConverter(new RootConverter());
-		
+
 		initialized = true;
 		return true;
 	}
-	
+
 	public static synchronized boolean isInitialized() {
 		return initialized;
 	}
-	
+
 	/**
 	 * Converts FIX message to FIXML.
 	 * 
@@ -59,7 +62,7 @@ public class FIXMLConverter {
 		}
 		return xstream.toXML(new FIXMLRoot(message));
 	}
-	
+
 	public Message toFIX(String fixml) {
 		if (!initialized) {
 			initialize();

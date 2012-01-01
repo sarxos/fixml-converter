@@ -1,11 +1,9 @@
 
-h1. Description
-
 The goal of this project is to create two way converter - from FIX -> FIXML and from FIXML -> FIX. On the FIX side I depends on "QuickFIX/J":http://www.quickfixj.org solution. On the FIXML side I try to parse schema files and construct proper XML with "XStream":http://xstream.codehaus.org converters from Codehause.
 
 h1. Work In Progress
 
-For now only simple messages can be converted into XML. Any *help* is greatly *appreciated*.
+For now only simple messages can be converted into XML. Any *help* is greatly *appreciated*. You can find working (more or less) examples in src/examples/java.
 
 h1. TODO
 

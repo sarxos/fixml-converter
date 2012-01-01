@@ -16,6 +16,7 @@ import com.sarxos.fixml.spec.fix.FIXMessageType;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
 import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
+import com.sarxos.fixml.spec.ml.FIXMLGroup;
 import com.sarxos.fixml.spec.ml.FIXMLMessage;
 import com.sarxos.fixml.spec.ml.FIXMLSchema;
 
@@ -23,14 +24,15 @@ import com.sarxos.fixml.spec.ml.FIXMLSchema;
 public class Spec {
 
 	private static final Class<?>[] classes = new Class[] {
-	FIXComponent.class,
-	FIXMessageType.class,
-	FIXDataRoot.class,
-	FIXMLComponent.class,
-	FIXMLElement.class,
-	FIXMLField.class,
-	FIXMLMessage.class,
-	FIXMLSchema.class,
+		FIXComponent.class,
+		FIXMessageType.class,
+		FIXDataRoot.class,
+		FIXMLComponent.class,
+		FIXMLElement.class,
+		FIXMLField.class,
+		FIXMLGroup.class,
+		FIXMLMessage.class,
+		FIXMLSchema.class,
 	};
 
 	private List<FIXMessageType> messageTypes = null;
@@ -179,7 +181,7 @@ public class Spec {
 		if (schema != null) {
 			return schema;
 		}
-		InputStream is = getStream("FIX50SP2.xml");
+		InputStream is = getStream("FIX50SP1.xml");
 		try {
 			schema = (FIXMLSchema) unmarshaller.unmarshal(is);
 		} catch (JAXBException e) {

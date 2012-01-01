@@ -16,7 +16,7 @@ import quickfix.fix50.MarketDataRequest.NoRelatedSym;
 import com.sarxos.fixml.FIXMLConverter;
 
 
-public class TestMarketDataRequest {
+public class ExampleMarketDataRequest {
 
 	public static void main(String[] args) {
 

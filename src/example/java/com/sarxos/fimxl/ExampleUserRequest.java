@@ -11,7 +11,7 @@ import quickfix.fix50.UserRequest;
 import com.sarxos.fixml.FIXMLConverter;
 
 
-public class TestUserRequest {
+public class ExampleUserRequest {
 
 	public static void main(String[] args) {
 

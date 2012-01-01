@@ -1,1323 +1,1324 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dataroot generated="2008-03-14T09:14:21-0400" latestEP="EP71 - Abbreviation Maintenance" xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<Components>
-<ComponentName>CommissionData</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1000</MsgID>
-<AbbrName>Comm</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DiscretionInstructions</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1001</MsgID>
-<AbbrName>DiscInstr</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>FinancingDetails</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1002</MsgID>
-<AbbrName>FinDetls</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>Instrument</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1003</MsgID>
-<AbbrName>Instrmt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrumentExtension</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1004</MsgID>
-<AbbrName>InstrmtExt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrumentLeg</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1005</MsgID>
-<AbbrName>Leg</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LegBenchmarkCurveData</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1006</MsgID>
-<AbbrName>BnchmkCurve</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LegStipulations</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1007</MsgID>
-<AbbrName>Stip</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NestedParties</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1008</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>OrderQtyData</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1011</MsgID>
-<AbbrName>OrdQty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>Parties</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1012</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PegInstructions</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1013</MsgID>
-<AbbrName>PegInstr</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PositionAmountData</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1014</MsgID>
-<AbbrName>Amt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PositionQty</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1015</MsgID>
-<AbbrName>Qty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SettlInstructionsData</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1016</MsgID>
-<AbbrName>SetInstr</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SettlParties</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1017</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SpreadOrBenchmarkCurveData</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1018</MsgID>
-<AbbrName>SprdBnchmkCurve</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>Stipulations</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1019</MsgID>
-<AbbrName>Stip</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdRegTimestamps</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1020</MsgID>
-<AbbrName>TrdRegTS</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UnderlyingInstrument</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1021</MsgID>
-<AbbrName>Undly</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>YieldData</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1022</MsgID>
-<AbbrName>Yield</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UnderlyingStipulations</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1023</MsgID>
-<AbbrName>Stip</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>StandardHeader</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Session</Category>
-<MsgID>1024</MsgID>
-<AbbrName>Hdr</AbbrName>
-<NotReqXML>1</NotReqXML>
-</Components>
-<Components>
-<ComponentName>StandardTrailer</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Session</Category>
-<MsgID>1025</MsgID>
-<AbbrName>Trlr</AbbrName>
-<NotReqXML>1</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NestedParties2</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1009</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NestedParties3</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1010</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>AffectedOrdGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>SingleGeneralOrderHandling</Category>
-<MsgID>2001</MsgID>
-<AbbrName>AffectOrd</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>AllocAckGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Allocation</Category>
-<MsgID>2002</MsgID>
-<AbbrName>AllocAck</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>AllocGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Allocation</Category>
-<MsgID>2003</MsgID>
-<AbbrName>Alloc</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>BidCompReqGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ProgramTrading</Category>
-<MsgID>2004</MsgID>
-<AbbrName>CompReq</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>BidCompRspGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ProgramTrading</Category>
-<MsgID>2005</MsgID>
-<AbbrName>CompRsp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>BidDescReqGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ProgramTrading</Category>
-<MsgID>2006</MsgID>
-<AbbrName>DescReq</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ClrInstGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2007</MsgID>
-<AbbrName>ClrInst</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>CollInqQualGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>CollateralManagement</Category>
-<MsgID>2008</MsgID>
-<AbbrName>Qual</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>CompIDReqGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2009</MsgID>
-<AbbrName>CIDReq</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>CompIDStatGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2010</MsgID>
-<AbbrName>CIDStat</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ContAmtGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2011</MsgID>
-<AbbrName>ContAmt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ContraGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2012</MsgID>
-<AbbrName>Contra</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>CpctyConfGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2013</MsgID>
-<AbbrName>Cpcty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ExecAllocGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Allocation</Category>
-<MsgID>2014</MsgID>
-<AbbrName>AllExc</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ExecCollGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>CollateralManagement</Category>
-<MsgID>2015</MsgID>
-<AbbrName>CollExc</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrmtGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2017</MsgID>
-<AbbrName>Inst</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrmtLegExecGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2018</MsgID>
-<AbbrName>Exec</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrmtLegGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2019</MsgID>
-<AbbrName>Leg</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrmtLegIOIGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2020</MsgID>
-<AbbrName>IOI</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrmtLegSecListGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2021</MsgID>
-<AbbrName>SecL</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrmtMDReqGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2022</MsgID>
-<AbbrName>InstReq</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrmtStrkPxGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ProgramTrading</Category>
-<MsgID>2023</MsgID>
-<AbbrName>StrkPX</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>IOIQualGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Indication</Category>
-<MsgID>2024</MsgID>
-<AbbrName>Qual</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LegOrdGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>MultilegOrders</Category>
-<MsgID>2025</MsgID>
-<AbbrName>Ord</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LegPreAllocGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2026</MsgID>
-<AbbrName>PreAll</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LegQuotGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2027</MsgID>
-<AbbrName>Quot</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LegQuotStatGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2028</MsgID>
-<AbbrName>QuoteStat</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LinesOfTextGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2029</MsgID>
-<AbbrName>TxtLn</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ListOrdGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ProgramTrading</Category>
-<MsgID>2030</MsgID>
-<AbbrName>Ord</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MDFullGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>MarketData</Category>
-<MsgID>2031</MsgID>
-<AbbrName>Full</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MDIncGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>MarketData</Category>
-<MsgID>2032</MsgID>
-<AbbrName>Inc</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MDReqGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>MarketData</Category>
-<MsgID>2033</MsgID>
-<AbbrName>Req</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MDRjctGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>MarketData</Category>
-<MsgID>2034</MsgID>
-<AbbrName>Rjct</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MiscFeesGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2035</MsgID>
-<AbbrName>MiscFees</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>OrdAllocGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2036</MsgID>
-<AbbrName>OrdAlloc</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>OrdListStatGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ProgramTrading</Category>
-<MsgID>2037</MsgID>
-<AbbrName>ListStat</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PosUndInstrmtGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>PositionMaintenance</Category>
-<MsgID>2038</MsgID>
-<AbbrName>PosUnd</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PreAllocGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2039</MsgID>
-<AbbrName>PreAll</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PreAllocMlegGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2040</MsgID>
-<AbbrName>PreAllocMleg</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotCxlEntriesGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2041</MsgID>
-<AbbrName>QuotCxlEntry</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotEntryAckGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2042</MsgID>
-<AbbrName>QuotEntryAck</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotEntryGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2043</MsgID>
-<AbbrName>QuotEntry</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotQualGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2044</MsgID>
-<AbbrName>QuotQual</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotReqGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2045</MsgID>
-<AbbrName>QuotReq</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotReqLegsGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2046</MsgID>
-<AbbrName>Leg</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotReqRjctGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2047</MsgID>
-<AbbrName>QuotReqRej</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotSetAckGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2048</MsgID>
-<AbbrName>QuotSetAck</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>QuotSetGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2049</MsgID>
-<AbbrName>QuotSet</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RelSymDerivSecGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ReferenceData</Category>
-<MsgID>2050</MsgID>
-<AbbrName>RelSym</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RFQReqGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>QuotationNegotiation</Category>
-<MsgID>2051</MsgID>
-<AbbrName>RFQReq</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RgstDistInstGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>RegistrationInstruction</Category>
-<MsgID>2052</MsgID>
-<AbbrName>RgDtlInst</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RgstDtlsGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>RegistrationInstruction</Category>
-<MsgID>2053</MsgID>
-<AbbrName>RgDtl</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RoutingGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2054</MsgID>
-<AbbrName>Rtg</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecListGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ReferenceData</Category>
-<MsgID>2055</MsgID>
-<AbbrName>SecL</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecTypesGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ReferenceData</Category>
-<MsgID>2056</MsgID>
-<AbbrName>SecT</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SettlInstGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>SettlementInstruction</Category>
-<MsgID>2057</MsgID>
-<AbbrName>SetInst</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SideCrossOrdCxlGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>CrossOrders</Category>
-<MsgID>2058</MsgID>
-<AbbrName>SideCrossCxl</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SideCrossOrdModGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>CrossOrders</Category>
-<MsgID>2059</MsgID>
-<AbbrName>SideCrossMod</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdAllocGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2060</MsgID>
-<AbbrName>Alloc</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdCapRptSideGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>TradeCapture</Category>
-<MsgID>2061</MsgID>
-<AbbrName>RptSide</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdCollGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2062</MsgID>
-<AbbrName>TrdColl</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdInstrmtLegGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>TradeCapture</Category>
-<MsgID>2063</MsgID>
-<AbbrName>TrdLeg</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdgSesGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2064</MsgID>
-<AbbrName>TrdSes</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UndInstrmtCollGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>CollateralManagement</Category>
-<MsgID>2065</MsgID>
-<AbbrName>UndColl</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UndInstrmtGrp</ComponentName>
-<ComponentType>OptimisedImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2066</MsgID>
-<AbbrName>Undly</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdCapDtGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>TradeCapture</Category>
-<MsgID>2069</MsgID>
-<AbbrName>TrdCapDt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>EvntGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2070</MsgID>
-<AbbrName>Evnt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecAltIDGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2071</MsgID>
-<AbbrName>AID</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LegSecAltIDGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2072</MsgID>
-<AbbrName>LegAID</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UndSecAltIDGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2073</MsgID>
-<AbbrName>UndAID</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>AttrbGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2074</MsgID>
-<AbbrName>Attrb</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DlvyInstGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2075</MsgID>
-<AbbrName>DlvInst</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SettlPtysSubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2076</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PtysSubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2077</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NstdPtysSubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2078</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>HopGrp</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Session</Category>
-<MsgID>2085</MsgID>
-<AbbrName>HopGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NstdPtys2SubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2079</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NstdPtys3SubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2080</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>StrategyParametersGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2086</MsgID>
-<AbbrName>StrpPrmGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecLstUpdRelSymGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ReferenceData</Category>
-<MsgID>2087</MsgID>
-<AbbrName>SecL</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecLstUpdRelSymsLegGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>ReferenceData</Category>
-<MsgID>2088</MsgID>
-<AbbrName>SecLstUpdRelSymsLegGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UnderlyingAmount</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1026</MsgID>
-<AbbrName>UndDlvAmt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ExpirationQty</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1027</MsgID>
-<AbbrName>Qty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrumentParties</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1032</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>InstrumentPtysSubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2093</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SideTrdRegTS</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1028</MsgID>
-<AbbrName>TrdRegTS</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdCapRptAckSideGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>TradeCapture</Category>
-<MsgID>2094</MsgID>
-<AbbrName>RptSide</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UndlyInstrumentParties</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1033</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UndlyInstrumentPtysSubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2096</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DisplayInstruction</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1029</MsgID>
-<AbbrName>DsplyInstr</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TriggeringInstruction</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1030</MsgID>
-<AbbrName>TrgrInstr</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RootParties</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1031</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RootSubParties</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2097</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdSessLstGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2099</MsgID>
-<AbbrName>TrdSessLstGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MsgTypeGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2098</MsgID>
-<AbbrName>MsgTypeGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecurityTradingRules</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1058</MsgID>
-<AbbrName>SecTrdgRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SettlDetails</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2139</MsgID>
-<AbbrName>SettlDetails</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SettlObligationInstructions</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>SettlementInstruction</Category>
-<MsgID>2101</MsgID>
-<AbbrName>SettlObligInst</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecSizesGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>MarketData</Category>
-<MsgID>2102</MsgID>
-<AbbrName>SecSizesGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>StatsIndGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>MarketData</Category>
-<MsgID>2103</MsgID>
-<AbbrName>StatsIndGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecurityXML</ComponentName>
-<ComponentType>XMLDataBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>1060</MsgID>
-<AbbrName>SecXML</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TickRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2118</MsgID>
-<AbbrName>TickRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>StrikeRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2119</MsgID>
-<AbbrName>StrkRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MaturityRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2120</MsgID>
-<AbbrName>MatRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>SecondaryPriceLimits</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>2121</MsgID>
-<AbbrName>PxLmts2</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>PriceLimits</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>2122</MsgID>
-<AbbrName>PxLmts</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MarketDataFeedTypes</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2123</MsgID>
-<AbbrName>MDFeedTyps</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>LotTypeRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2124</MsgID>
-<AbbrName>LotTypeRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MatchRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2125</MsgID>
-<AbbrName>MtchRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ExecInstRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2126</MsgID>
-<AbbrName>ExecInstRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TimeInForceRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2127</MsgID>
-<AbbrName>TmInForceRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>OrdTypeRules</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2128</MsgID>
-<AbbrName>OrdTypRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TradingSessionRules</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>2129</MsgID>
-<AbbrName>TrdgSesRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TradingSessionRulesGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2130</MsgID>
-<AbbrName>TrdgSesRulesGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>BaseTradingRules</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>2131</MsgID>
-<AbbrName>BaseTrdgRules</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>MarketSegmentGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2132</MsgID>
-<AbbrName>MktSegGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeInstrumentPartySubIDsGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2104</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeInstrumentParties</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2141</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeInstrumentAttribute</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2136</MsgID>
-<AbbrName>Attrb</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NestedInstrumentAttribute</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2135</MsgID>
-<AbbrName>Attrb</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeInstrument</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>2140</MsgID>
-<AbbrName>DerivInstrmt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeSecurityAltIDGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2105</MsgID>
-<AbbrName>AID</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeEventsGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2106</MsgID>
-<AbbrName>Evnt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeSecurityDefinition</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>2133</MsgID>
-<AbbrName>DerivSecDef</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>RelSymDerivSecUpdGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2107</MsgID>
-<AbbrName>RelSym</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>DerivativeSecurityXML</ComponentName>
-<ComponentType>XMLDataBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>1061</MsgID>
-<AbbrName>SecXML</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UnderlyingLegSecurityAltIDGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2108</MsgID>
-<AbbrName>AID</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UnderlyingLegInstrument</ComponentName>
-<ComponentType>ImplicitBlock</ComponentType>
-<Category>Common</Category>
-<MsgID>2134</MsgID>
-<AbbrName>Instrmt</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TradeCapLegUnderlyingsGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2109</MsgID>
-<AbbrName>TradeCapLegUndlyGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>UsernameGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>UserManagement</Category>
-<MsgID>2137</MsgID>
-<AbbrName>UserGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NotAffectedOrdersGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>OrderMassHandling</Category>
-<MsgID>2111</MsgID>
-<AbbrName>NotAffectedOrdersGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>FillsGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>SingleGeneralOrderHandling</Category>
-<MsgID>2112</MsgID>
-<AbbrName>FillsGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>TrdRepIndicatorsGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2113</MsgID>
-<AbbrName>TrdRepIndicatorsGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ApplicationSequenceControl</ComponentName>
-<ComponentType>Block</ComponentType>
-<Category>Common</Category>
-<MsgID>1057</MsgID>
-<AbbrName>ApplSeqCtrl</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ApplIDRequestGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Application</Category>
-<MsgID>2115</MsgID>
-<AbbrName>ApplIDReqGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ApplIDRequestAckGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Application</Category>
-<MsgID>2116</MsgID>
-<AbbrName>ApplIDReqAckGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>ApplIDReportGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Application</Category>
-<MsgID>2117</MsgID>
-<AbbrName>ApplIDRptGrp</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NstdPtys4SubGrp</ComponentName>
-<ComponentType>ImplicitBlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>2142</MsgID>
-<AbbrName>Sub</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
-<Components>
-<ComponentName>NestedParties4</ComponentName>
-<ComponentType>BlockRepeating</ComponentType>
-<Category>Common</Category>
-<MsgID>1059</MsgID>
-<AbbrName>Pty</AbbrName>
-<NotReqXML>0</NotReqXML>
-</Components>
+<dataroot generated="2008-03-14T09:14:21-0400" latestEP="EP71 - Abbreviation Maintenance"
+	xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Components>
+		<ComponentName>CommissionData</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1000</MsgID>
+		<AbbrName>Comm</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DiscretionInstructions</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1001</MsgID>
+		<AbbrName>DiscInstr</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>FinancingDetails</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1002</MsgID>
+		<AbbrName>FinDetls</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>Instrument</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1003</MsgID>
+		<AbbrName>Instrmt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrumentExtension</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1004</MsgID>
+		<AbbrName>InstrmtExt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrumentLeg</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1005</MsgID>
+		<AbbrName>Leg</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LegBenchmarkCurveData</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1006</MsgID>
+		<AbbrName>BnchmkCurve</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LegStipulations</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1007</MsgID>
+		<AbbrName>Stip</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NestedParties</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1008</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>OrderQtyData</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1011</MsgID>
+		<AbbrName>OrdQty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>Parties</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1012</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PegInstructions</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1013</MsgID>
+		<AbbrName>PegInstr</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PositionAmountData</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1014</MsgID>
+		<AbbrName>Amt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PositionQty</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1015</MsgID>
+		<AbbrName>Qty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SettlInstructionsData</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1016</MsgID>
+		<AbbrName>SetInstr</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SettlParties</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1017</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SpreadOrBenchmarkCurveData</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1018</MsgID>
+		<AbbrName>SprdBnchmkCurve</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>Stipulations</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1019</MsgID>
+		<AbbrName>Stip</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdRegTimestamps</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1020</MsgID>
+		<AbbrName>TrdRegTS</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UnderlyingInstrument</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1021</MsgID>
+		<AbbrName>Undly</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>YieldData</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1022</MsgID>
+		<AbbrName>Yield</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UnderlyingStipulations</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1023</MsgID>
+		<AbbrName>Stip</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>StandardHeader</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Session</Category>
+		<MsgID>1024</MsgID>
+		<AbbrName>Hdr</AbbrName>
+		<NotReqXML>1</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>StandardTrailer</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Session</Category>
+		<MsgID>1025</MsgID>
+		<AbbrName>Trlr</AbbrName>
+		<NotReqXML>1</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NestedParties2</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1009</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NestedParties3</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1010</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>AffectedOrdGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>SingleGeneralOrderHandling</Category>
+		<MsgID>2001</MsgID>
+		<AbbrName>AffectOrd</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>AllocAckGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Allocation</Category>
+		<MsgID>2002</MsgID>
+		<AbbrName>AllocAck</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>AllocGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Allocation</Category>
+		<MsgID>2003</MsgID>
+		<AbbrName>Alloc</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>BidCompReqGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ProgramTrading</Category>
+		<MsgID>2004</MsgID>
+		<AbbrName>CompReq</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>BidCompRspGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ProgramTrading</Category>
+		<MsgID>2005</MsgID>
+		<AbbrName>CompRsp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>BidDescReqGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ProgramTrading</Category>
+		<MsgID>2006</MsgID>
+		<AbbrName>DescReq</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ClrInstGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2007</MsgID>
+		<AbbrName>ClrInst</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>CollInqQualGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>CollateralManagement</Category>
+		<MsgID>2008</MsgID>
+		<AbbrName>Qual</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>CompIDReqGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2009</MsgID>
+		<AbbrName>CIDReq</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>CompIDStatGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2010</MsgID>
+		<AbbrName>CIDStat</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ContAmtGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2011</MsgID>
+		<AbbrName>ContAmt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ContraGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2012</MsgID>
+		<AbbrName>Contra</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>CpctyConfGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2013</MsgID>
+		<AbbrName>Cpcty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ExecAllocGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Allocation</Category>
+		<MsgID>2014</MsgID>
+		<AbbrName>AllExc</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ExecCollGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>CollateralManagement</Category>
+		<MsgID>2015</MsgID>
+		<AbbrName>CollExc</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrmtGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2017</MsgID>
+		<AbbrName>Inst</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrmtLegExecGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2018</MsgID>
+		<AbbrName>Exec</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrmtLegGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2019</MsgID>
+		<AbbrName>Leg</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrmtLegIOIGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2020</MsgID>
+		<AbbrName>IOI</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrmtLegSecListGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2021</MsgID>
+		<AbbrName>SecL</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrmtMDReqGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2022</MsgID>
+		<AbbrName>InstReq</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrmtStrkPxGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ProgramTrading</Category>
+		<MsgID>2023</MsgID>
+		<AbbrName>StrkPX</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>IOIQualGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Indication</Category>
+		<MsgID>2024</MsgID>
+		<AbbrName>Qual</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LegOrdGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>MultilegOrders</Category>
+		<MsgID>2025</MsgID>
+		<AbbrName>Ord</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LegPreAllocGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2026</MsgID>
+		<AbbrName>PreAll</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LegQuotGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2027</MsgID>
+		<AbbrName>Quot</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LegQuotStatGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2028</MsgID>
+		<AbbrName>QuoteStat</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LinesOfTextGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2029</MsgID>
+		<AbbrName>TxtLn</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ListOrdGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ProgramTrading</Category>
+		<MsgID>2030</MsgID>
+		<AbbrName>Ord</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MDFullGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>MarketData</Category>
+		<MsgID>2031</MsgID>
+		<AbbrName>Full</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MDIncGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>MarketData</Category>
+		<MsgID>2032</MsgID>
+		<AbbrName>Inc</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MDReqGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>MarketData</Category>
+		<MsgID>2033</MsgID>
+		<AbbrName>Req</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MDRjctGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>MarketData</Category>
+		<MsgID>2034</MsgID>
+		<AbbrName>Rjct</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MiscFeesGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2035</MsgID>
+		<AbbrName>MiscFees</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>OrdAllocGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2036</MsgID>
+		<AbbrName>OrdAlloc</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>OrdListStatGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ProgramTrading</Category>
+		<MsgID>2037</MsgID>
+		<AbbrName>ListStat</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PosUndInstrmtGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>PositionMaintenance</Category>
+		<MsgID>2038</MsgID>
+		<AbbrName>PosUnd</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PreAllocGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2039</MsgID>
+		<AbbrName>PreAll</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PreAllocMlegGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2040</MsgID>
+		<AbbrName>PreAllocMleg</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotCxlEntriesGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2041</MsgID>
+		<AbbrName>QuotCxlEntry</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotEntryAckGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2042</MsgID>
+		<AbbrName>QuotEntryAck</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotEntryGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2043</MsgID>
+		<AbbrName>QuotEntry</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotQualGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2044</MsgID>
+		<AbbrName>QuotQual</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotReqGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2045</MsgID>
+		<AbbrName>QuotReq</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotReqLegsGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2046</MsgID>
+		<AbbrName>Leg</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotReqRjctGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2047</MsgID>
+		<AbbrName>QuotReqRej</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotSetAckGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2048</MsgID>
+		<AbbrName>QuotSetAck</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>QuotSetGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2049</MsgID>
+		<AbbrName>QuotSet</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RelSymDerivSecGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ReferenceData</Category>
+		<MsgID>2050</MsgID>
+		<AbbrName>RelSym</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RFQReqGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>QuotationNegotiation</Category>
+		<MsgID>2051</MsgID>
+		<AbbrName>RFQReq</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RgstDistInstGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>RegistrationInstruction</Category>
+		<MsgID>2052</MsgID>
+		<AbbrName>RgDtlInst</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RgstDtlsGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>RegistrationInstruction</Category>
+		<MsgID>2053</MsgID>
+		<AbbrName>RgDtl</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RoutingGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2054</MsgID>
+		<AbbrName>Rtg</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecListGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ReferenceData</Category>
+		<MsgID>2055</MsgID>
+		<AbbrName>SecL</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecTypesGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ReferenceData</Category>
+		<MsgID>2056</MsgID>
+		<AbbrName>SecT</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SettlInstGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>SettlementInstruction</Category>
+		<MsgID>2057</MsgID>
+		<AbbrName>SetInst</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SideCrossOrdCxlGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>CrossOrders</Category>
+		<MsgID>2058</MsgID>
+		<AbbrName>SideCrossCxl</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SideCrossOrdModGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>CrossOrders</Category>
+		<MsgID>2059</MsgID>
+		<AbbrName>SideCrossMod</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdAllocGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2060</MsgID>
+		<AbbrName>Alloc</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdCapRptSideGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>TradeCapture</Category>
+		<MsgID>2061</MsgID>
+		<AbbrName>RptSide</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdCollGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2062</MsgID>
+		<AbbrName>TrdColl</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdInstrmtLegGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>TradeCapture</Category>
+		<MsgID>2063</MsgID>
+		<AbbrName>TrdLeg</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdgSesGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2064</MsgID>
+		<AbbrName>TrdSes</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UndInstrmtCollGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>CollateralManagement</Category>
+		<MsgID>2065</MsgID>
+		<AbbrName>UndColl</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UndInstrmtGrp</ComponentName>
+		<ComponentType>OptimisedImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2066</MsgID>
+		<AbbrName>Undly</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdCapDtGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>TradeCapture</Category>
+		<MsgID>2069</MsgID>
+		<AbbrName>TrdCapDt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>EvntGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2070</MsgID>
+		<AbbrName>Evnt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecAltIDGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2071</MsgID>
+		<AbbrName>AID</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LegSecAltIDGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2072</MsgID>
+		<AbbrName>LegAID</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UndSecAltIDGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2073</MsgID>
+		<AbbrName>UndAID</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>AttrbGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2074</MsgID>
+		<AbbrName>Attrb</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DlvyInstGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2075</MsgID>
+		<AbbrName>DlvInst</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SettlPtysSubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2076</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PtysSubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2077</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NstdPtysSubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2078</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>HopGrp</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Session</Category>
+		<MsgID>2085</MsgID>
+		<AbbrName>HopGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NstdPtys2SubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2079</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NstdPtys3SubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2080</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>StrategyParametersGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2086</MsgID>
+		<AbbrName>StrpPrmGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecLstUpdRelSymGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ReferenceData</Category>
+		<MsgID>2087</MsgID>
+		<AbbrName>SecL</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecLstUpdRelSymsLegGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>ReferenceData</Category>
+		<MsgID>2088</MsgID>
+		<AbbrName>SecLstUpdRelSymsLegGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UnderlyingAmount</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1026</MsgID>
+		<AbbrName>UndDlvAmt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ExpirationQty</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1027</MsgID>
+		<AbbrName>Qty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrumentParties</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1032</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>InstrumentPtysSubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2093</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SideTrdRegTS</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1028</MsgID>
+		<AbbrName>TrdRegTS</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdCapRptAckSideGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>TradeCapture</Category>
+		<MsgID>2094</MsgID>
+		<AbbrName>RptSide</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UndlyInstrumentParties</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1033</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UndlyInstrumentPtysSubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2096</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DisplayInstruction</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1029</MsgID>
+		<AbbrName>DsplyInstr</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TriggeringInstruction</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1030</MsgID>
+		<AbbrName>TrgrInstr</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RootParties</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1031</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RootSubParties</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2097</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdSessLstGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2099</MsgID>
+		<AbbrName>TrdSessLstGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MsgTypeGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2098</MsgID>
+		<AbbrName>MsgTypeGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecurityTradingRules</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1058</MsgID>
+		<AbbrName>SecTrdgRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SettlDetails</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2139</MsgID>
+		<AbbrName>SettlDetails</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SettlObligationInstructions</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>SettlementInstruction</Category>
+		<MsgID>2101</MsgID>
+		<AbbrName>SettlObligInst</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecSizesGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>MarketData</Category>
+		<MsgID>2102</MsgID>
+		<AbbrName>SecSizesGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>StatsIndGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>MarketData</Category>
+		<MsgID>2103</MsgID>
+		<AbbrName>StatsIndGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecurityXML</ComponentName>
+		<ComponentType>XMLDataBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1060</MsgID>
+		<AbbrName>SecXML</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TickRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2118</MsgID>
+		<AbbrName>TickRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>StrikeRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2119</MsgID>
+		<AbbrName>StrkRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MaturityRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2120</MsgID>
+		<AbbrName>MatRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>SecondaryPriceLimits</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2121</MsgID>
+		<AbbrName>PxLmts2</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>PriceLimits</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2122</MsgID>
+		<AbbrName>PxLmts</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MarketDataFeedTypes</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2123</MsgID>
+		<AbbrName>MDFeedTyps</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>LotTypeRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2124</MsgID>
+		<AbbrName>LotTypeRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MatchRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2125</MsgID>
+		<AbbrName>MtchRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ExecInstRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2126</MsgID>
+		<AbbrName>ExecInstRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TimeInForceRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2127</MsgID>
+		<AbbrName>TmInForceRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>OrdTypeRules</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2128</MsgID>
+		<AbbrName>OrdTypRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TradingSessionRules</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2129</MsgID>
+		<AbbrName>TrdgSesRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TradingSessionRulesGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2130</MsgID>
+		<AbbrName>TrdgSesRulesGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>BaseTradingRules</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2131</MsgID>
+		<AbbrName>BaseTrdgRules</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>MarketSegmentGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2132</MsgID>
+		<AbbrName>MktSegGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeInstrumentPartySubIDsGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2104</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeInstrumentParties</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2141</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeInstrumentAttribute</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2136</MsgID>
+		<AbbrName>Attrb</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NestedInstrumentAttribute</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2135</MsgID>
+		<AbbrName>Attrb</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeInstrument</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2140</MsgID>
+		<AbbrName>DerivInstrmt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeSecurityAltIDGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2105</MsgID>
+		<AbbrName>AID</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeEventsGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2106</MsgID>
+		<AbbrName>Evnt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeSecurityDefinition</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2133</MsgID>
+		<AbbrName>DerivSecDef</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>RelSymDerivSecUpdGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2107</MsgID>
+		<AbbrName>RelSym</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>DerivativeSecurityXML</ComponentName>
+		<ComponentType>XMLDataBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1061</MsgID>
+		<AbbrName>SecXML</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UnderlyingLegSecurityAltIDGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2108</MsgID>
+		<AbbrName>AID</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UnderlyingLegInstrument</ComponentName>
+		<ComponentType>ImplicitBlock</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2134</MsgID>
+		<AbbrName>Instrmt</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TradeCapLegUnderlyingsGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2109</MsgID>
+		<AbbrName>TradeCapLegUndlyGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>UsernameGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>UserManagement</Category>
+		<MsgID>2137</MsgID>
+		<AbbrName>UserGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NotAffectedOrdersGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>OrderMassHandling</Category>
+		<MsgID>2111</MsgID>
+		<AbbrName>NotAffectedOrdersGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>FillsGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>SingleGeneralOrderHandling</Category>
+		<MsgID>2112</MsgID>
+		<AbbrName>FillsGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>TrdRepIndicatorsGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2113</MsgID>
+		<AbbrName>TrdRepIndicatorsGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ApplicationSequenceControl</ComponentName>
+		<ComponentType>Block</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1057</MsgID>
+		<AbbrName>ApplSeqCtrl</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ApplIDRequestGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Application</Category>
+		<MsgID>2115</MsgID>
+		<AbbrName>ApplIDReqGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ApplIDRequestAckGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Application</Category>
+		<MsgID>2116</MsgID>
+		<AbbrName>ApplIDReqAckGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>ApplIDReportGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Application</Category>
+		<MsgID>2117</MsgID>
+		<AbbrName>ApplIDRptGrp</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NstdPtys4SubGrp</ComponentName>
+		<ComponentType>ImplicitBlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>2142</MsgID>
+		<AbbrName>Sub</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
+	<Components>
+		<ComponentName>NestedParties4</ComponentName>
+		<ComponentType>BlockRepeating</ComponentType>
+		<Category>Common</Category>
+		<MsgID>1059</MsgID>
+		<AbbrName>Pty</AbbrName>
+		<NotReqXML>0</NotReqXML>
+	</Components>
 </dataroot>

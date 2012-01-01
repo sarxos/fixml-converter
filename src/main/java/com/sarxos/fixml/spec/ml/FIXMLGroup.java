@@ -1,19 +1,22 @@
 package com.sarxos.fixml.spec.ml;
 
+import java.util.List;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
- * FIXML schema field.
+ * FIXML schema elements group.
  * 
  * @author Bartosz Firyn (SarXos)
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "field")
-public class FIXMLField extends FIXMLElement {
+@XmlRootElement(name = "group")
+public class FIXMLGroup extends FIXMLElement {
 
 	@XmlAttribute
 	private String name;
@@ -21,18 +24,18 @@ public class FIXMLField extends FIXMLElement {
 	@XmlAttribute
 	private String required;
 
-	@XmlAttribute
-	private int number;
+	@XmlElementRef
+	private List<FIXMLElement> elements;
 
-	@XmlAttribute
-	private String type;
-
-	public int getNumber() {
-		return number;
+	/**
+	 * @return Elements inside FIXML group.
+	 */
+	public List<FIXMLElement> getElements() {
+		return elements;
 	}
 
 	/**
-	 * @return Field name
+	 * @return Group name
 	 */
 	public String getName() {
 		return name;
@@ -49,9 +52,5 @@ public class FIXMLField extends FIXMLElement {
 	public String toString() {
 		return new StringBuffer(super.toString()).append('[').append(getName()).
 		append("]").append(isRequired() ? ":R" : "").toString();
-	}
-
-	public String getType() {
-		return type;
 	}
 }

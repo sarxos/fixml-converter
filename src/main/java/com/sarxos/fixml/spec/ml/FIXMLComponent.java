@@ -44,4 +44,21 @@ public class FIXMLComponent extends FIXMLElement {
 		append(':').append(getElements().size()).append(']').
 		append(isRequired() ? ":R" : "").toString();
 	}
+
+	public boolean isGroup() {
+		List<FIXMLElement> elements = getElements();
+		if (elements.size() == 1) {
+			if (elements.get(0) instanceof FIXMLGroup) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static FIXMLGroup toGroup(FIXMLComponent component) {
+		if (!component.isGroup()) {
+			throw new RuntimeException("Component " + component + " is not a group!");
+		}
+		return (FIXMLGroup) component.getElements().get(0);
+	}
 }

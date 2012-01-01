@@ -2,60 +2,58 @@ package com.sarxos.fixml.xstream;
 
 import quickfix.FieldNotFound;
 import quickfix.Group;
-import quickfix.Message;
 
 import com.sarxos.fixml.spec.fix.FIXComponent;
 import com.sarxos.fixml.spec.fix.FIXField;
-import com.sarxos.fixml.spec.fix.FIXMessageType;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
 import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
 import com.sarxos.fixml.spec.ml.FIXMLGroup;
-import com.sarxos.fixml.spec.ml.FIXMLMessage;
 import com.thoughtworks.xstream.converters.MarshallingContext;
 import com.thoughtworks.xstream.converters.UnmarshallingContext;
 import com.thoughtworks.xstream.io.HierarchicalStreamReader;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 
 
-public class MessageConverter extends AbstractConverter {
+public class GroupConverter extends AbstractConverter {
 
-	@Override
+	public GroupConverter() {
+		super();
+	}
+
 	@SuppressWarnings("rawtypes")
-	public boolean canConvert(Class type) {
-		return type != null && Message.class.isAssignableFrom(type);
+	@Override
+	public boolean canConvert(Class clazz) {
+		return GroupWrapper.class.isAssignableFrom(clazz);
 	}
 
 	@Override
 	public void marshal(Object source, HierarchicalStreamWriter writer, MarshallingContext context) {
-		Message fixMessage = (Message) source;
 
-		String name = fixMessage.getClass().getSimpleName();
+		GroupWrapper wrapper = (GroupWrapper) source;
+		FIXMLGroup ggroup = wrapper.getGroup();
+		Group fixGroup = wrapper.getFIXGroup();
 
-		FIXMessageType fixMessageType = getMessageTypesMapping().get(name);
-		FIXMLMessage message = getSchema().getMessageByName(name);
-
-		writer.startNode(fixMessageType.getAbbr());
-
-		for (FIXMLElement element : message.getElements()) {
+		for (FIXMLElement element : ggroup.getElements()) {
 			if (element instanceof FIXMLField) {
 
 				FIXMLField field = (FIXMLField) element;
 				FIXField fixField = getFieldsMapping().get(field.getName());
+				System.out.println(field.getName());
 				String abbr = fixField.getAbbr();
 
-				if (fixMessage.isSetField(fixField.getTag())) {
+				if (fixGroup.isSetField(fixField.getTag())) {
 					try {
-						writer.addAttribute(abbr, fixMessage.getString(fixField.getTag()));
+						writer.addAttribute(abbr, fixGroup.getString(fixField.getTag()));
 					} catch (FieldNotFound e) {
 						if (field.isRequired()) {
-							throw new RuntimeException("Required field " + fixField + " is missing in message " + name, e);
+							throw new RuntimeException("Required field " + fixField + " is missing in group " + ggroup, e);
 						}
 						// ignore non required fields
 					}
 				} else {
 					if (field.isRequired()) {
-						throw new RuntimeException("Required field " + fixField + " is missing in message " + name);
+						throw new RuntimeException("Required field " + fixField + " is missing in group " + ggroup);
 					}
 				}
 			} else if (element instanceof FIXMLComponent) {
@@ -67,7 +65,7 @@ public class MessageConverter extends AbstractConverter {
 
 					FIXMLGroup group = FIXMLComponent.toGroup(descriptor);
 					FIXMLField field = getSchema().getFieldByName(group.getName());
-					int n = fixMessage.getGroupCount(field.getNumber());
+					int n = fixGroup.getGroupCount(field.getNumber());
 
 					// required components should be present
 					if (component.isRequired() && n == 0) {
@@ -75,7 +73,7 @@ public class MessageConverter extends AbstractConverter {
 					}
 
 					// marshal all groups
-					for (Group g : fixMessage.getGroups(field.getNumber())) {
+					for (Group g : fixGroup.getGroups(field.getNumber())) {
 
 						FIXComponent fixComponent = getComponentsMapping().get(component.getName());
 						String abbr = fixComponent.getAbbr();
@@ -89,13 +87,11 @@ public class MessageConverter extends AbstractConverter {
 				throw new RuntimeException("Class " + element.getClass() + " should not be present!");
 			}
 		}
-
-		writer.endNode();
 	}
 
 	@Override
-	public Object unmarshal(HierarchicalStreamReader reader, UnmarshallingContext context) {
-		throw new RuntimeException("Not yet implemented");
+	public Object unmarshal(HierarchicalStreamReader arg0, UnmarshallingContext arg1) {
+		throw new RuntimeException("Not yet implemented :(");
 	}
 
 }
