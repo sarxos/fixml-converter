@@ -1,0 +1,1 @@
+<FIXML v="5.0" r="20080317" s="20080314"><MktDataReq ReqID="2" SubReqTyp="1" MktDepth="1"><Req Typ="4"/><Req Typ="7"/><Req Typ="8"/><Req Typ="5"/><Req Typ="0"/><Req Typ="1"/><InstReq><Instrmt Sym="KGHM" ID="PLKGH200001" Src="4"/></InstReq><InstReq><Instrmt Sym="MCI" ID="PLMCI000AAX" Src="4"/></InstReq></MktDataReq></FIXML>

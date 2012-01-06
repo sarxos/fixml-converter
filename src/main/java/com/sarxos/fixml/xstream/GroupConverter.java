@@ -2,7 +2,6 @@ package com.sarxos.fixml.xstream;
 
 import quickfix.Group;
 
-import com.sarxos.fixml.spec.fix.FIXComponent;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
 import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
@@ -36,50 +35,7 @@ public class GroupConverter extends AbstractConverter {
 			if (element instanceof FIXMLField) {
 				marshalField(fixGroup, element, writer);
 			} else if (element instanceof FIXMLComponent) {
-
-				FIXMLComponent component = (FIXMLComponent) element;
-				FIXMLComponent descriptor = getSchema().getComponentByName(component.getName());
-				FIXComponent fixComponent = getComponentsMapping().get(component.getName());
-
-				if (descriptor.isGroup()) {
-
-					// group case
-
-					FIXMLGroup group = FIXMLComponent.toGroup(descriptor);
-					FIXMLField field = getSchema().getFieldByName(group.getName());
-					int n = fixGroup.getGroupCount(field.getNumber());
-
-					// required components should be present
-					if (component.isRequired() && n == 0) {
-						throw new RuntimeException("Component " + component + " is required");
-					}
-
-					// marshal all groups
-					for (Group g : fixGroup.getGroups(field.getNumber())) {
-
-						String abbr = fixComponent.getAbbr();
-
-						writer.startNode(abbr);
-						context.convertAnother(new GroupWrapper(g, group));
-						writer.endNode();
-					}
-
-				} else {
-
-					// component case
-
-					String abbr = fixComponent.getAbbr();
-
-					writer.startNode(abbr);
-
-					FIXMLComponent innerComponent = getSchema().getComponentByName(fixComponent.getName());
-
-					// fixGroup.getField(new Instrument());
-
-					// writer.startNode(abbr);
-					// context.convertAnother(new GroupWrapper(g, group));
-					writer.endNode();
-				}
+				marshalComponent(fixGroup, element, writer, context);
 			} else {
 				throw new RuntimeException("Class " + element.getClass() + " should not be present!");
 			}

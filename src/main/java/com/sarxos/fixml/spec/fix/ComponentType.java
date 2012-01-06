@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlEnumValue;
 
 
 @XmlEnum
-public enum FIXComponentType {
+public enum ComponentType {
 
 	@XmlEnumValue("ImplicitBlockRepeating")
 	IMPLICIT_BLOCK_REPEATING,
@@ -15,4 +15,7 @@ public enum FIXComponentType {
 
 	@XmlEnumValue("Block")
 	BLOCK,
+
+	@XmlEnumValue("XMLDataBlock")
+	XML_DATA_BLOCK,
 }

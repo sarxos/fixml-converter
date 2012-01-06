@@ -10,26 +10,26 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "dataroot")
-public class FIXDataRoot {
+public class SpecDataRoot {
 
 	@XmlElement(name = "MsgType")
-	private List<FIXMessageType> types;
+	private List<MessageTypeSpec> types;
 
 	@XmlElement(name = "Components")
-	private List<FIXComponent> components;
+	private List<ComponentSpec> components;
 
 	@XmlElement(name = "Fields")
-	private List<FIXField> fields;
+	private List<FieldSpec> fields;
 
-	public List<FIXMessageType> getTypes() {
+	public List<MessageTypeSpec> getTypes() {
 		return types;
 	}
 
-	public List<FIXComponent> getComponents() {
+	public List<ComponentSpec> getComponents() {
 		return components;
 	}
 
-	public List<FIXField> getFields() {
+	public List<FieldSpec> getFields() {
 		return fields;
 	}
 }

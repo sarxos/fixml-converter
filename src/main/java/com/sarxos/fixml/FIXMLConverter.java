@@ -1,12 +1,17 @@
 package com.sarxos.fixml;
 
+import java.io.IOException;
+import java.io.StringWriter;
+
 import quickfix.Message;
 
 import com.sarxos.fixml.spec.ml.FIXMLRoot;
+import com.sarxos.fixml.xstream.ComponentConverter;
 import com.sarxos.fixml.xstream.GroupConverter;
 import com.sarxos.fixml.xstream.MessageConverter;
 import com.sarxos.fixml.xstream.RootConverter;
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.CompactWriter;
 
 
 /**
@@ -18,6 +23,7 @@ public class FIXMLConverter {
 
 	private static boolean initialized = false;
 	private static XStream xstream = null;
+	private boolean pretty = false;
 
 	public FIXMLConverter() {
 	}
@@ -39,6 +45,7 @@ public class FIXMLConverter {
 		xstream = new XStream();
 		xstream.processAnnotations(FIXMLRoot.class);
 		xstream.registerConverter(new GroupConverter());
+		xstream.registerConverter(new ComponentConverter());
 		xstream.registerConverter(new MessageConverter());
 		xstream.registerConverter(new RootConverter());
 
@@ -60,7 +67,21 @@ public class FIXMLConverter {
 		if (!initialized) {
 			initialize();
 		}
-		return xstream.toXML(new FIXMLRoot(message));
+		StringWriter sw = new StringWriter();
+		try {
+			if (pretty) {
+				xstream.toXML(new FIXMLRoot(message), sw);
+			} else {
+				xstream.marshal(new FIXMLRoot(message), new CompactWriter(sw));
+			}
+			return sw.toString();
+		} finally {
+			try {
+				sw.close();
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+		}
 	}
 
 	public Message toFIX(String fixml) {
@@ -68,5 +89,9 @@ public class FIXMLConverter {
 			initialize();
 		}
 		throw new RuntimeException("Not yet implemented");
+	}
+
+	public void setPretty(boolean pretty) {
+		this.pretty = pretty;
 	}
 }

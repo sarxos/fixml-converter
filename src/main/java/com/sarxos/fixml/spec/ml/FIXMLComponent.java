@@ -9,6 +9,9 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.sarxos.fixml.spec.Spec;
+import com.sarxos.fixml.spec.fix.ComponentSpec;
+
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "component")
@@ -22,6 +25,8 @@ public class FIXMLComponent extends FIXMLElement {
 
 	@XmlElementRef
 	private List<FIXMLElement> elements;
+
+	private transient ComponentSpec spec = null;
 
 	public String getName() {
 		return name;
@@ -60,5 +65,15 @@ public class FIXMLComponent extends FIXMLElement {
 			throw new RuntimeException("Component " + component + " is not a group!");
 		}
 		return (FIXMLGroup) component.getElements().get(0);
+	}
+
+	/**
+	 * @return FIX component specification.
+	 */
+	public ComponentSpec getSpec() {
+		if (spec == null) {
+			spec = Spec.getInstance().getComponentSpec(getName());
+		}
+		return spec;
 	}
 }

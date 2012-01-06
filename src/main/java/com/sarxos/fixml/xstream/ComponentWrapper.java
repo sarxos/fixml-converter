@@ -1,22 +1,22 @@
 package com.sarxos.fixml.xstream;
 
-import quickfix.Message;
+import quickfix.FieldMap;
 
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
 
 
 public class ComponentWrapper {
 
-	private Message fixComponent = null;
+	private FieldMap fixComponent = null;
 	private FIXMLComponent component = null;
 
-	public ComponentWrapper(Message fixComponent, FIXMLComponent component) {
+	public ComponentWrapper(FieldMap fixComponent, FIXMLComponent component) {
 		super();
 		this.fixComponent = fixComponent;
 		this.component = component;
 	}
 
-	public Message getFixComponent() {
+	public FieldMap getFixComponent() {
 		return fixComponent;
 	}
 

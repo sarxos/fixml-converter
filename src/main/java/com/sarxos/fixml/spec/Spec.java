@@ -9,10 +9,10 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import com.sarxos.fixml.spec.fix.FIXComponent;
-import com.sarxos.fixml.spec.fix.FIXDataRoot;
-import com.sarxos.fixml.spec.fix.FIXField;
-import com.sarxos.fixml.spec.fix.FIXMessageType;
+import com.sarxos.fixml.spec.fix.ComponentSpec;
+import com.sarxos.fixml.spec.fix.FieldSpec;
+import com.sarxos.fixml.spec.fix.MessageTypeSpec;
+import com.sarxos.fixml.spec.fix.SpecDataRoot;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
 import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
@@ -24,9 +24,9 @@ import com.sarxos.fixml.spec.ml.FIXMLSchema;
 public class Spec {
 
 	private static final Class<?>[] classes = new Class[] {
-		FIXComponent.class,
-		FIXMessageType.class,
-		FIXDataRoot.class,
+		ComponentSpec.class,
+		MessageTypeSpec.class,
+		SpecDataRoot.class,
 		FIXMLComponent.class,
 		FIXMLElement.class,
 		FIXMLField.class,
@@ -35,23 +35,32 @@ public class Spec {
 		FIXMLSchema.class,
 	};
 
-	private List<FIXMessageType> messageTypes = null;
-	private List<FIXComponent> components = null;
-	private List<FIXField> fields = null;
-	private Map<String, FIXMessageType> messageTypesMapping = null;
-	private Map<String, FIXComponent> componentsMapping = null;
-	private Map<String, FIXField> fieldsMapping = null;
+	private static Spec instance = null;
+
+	private List<MessageTypeSpec> messageTypes = null;
+	private List<ComponentSpec> components = null;
+	private List<FieldSpec> fields = null;
+	private Map<String, MessageTypeSpec> messageTypesMapping = null;
+	private Map<String, ComponentSpec> componentsMapping = null;
+	private Map<String, FieldSpec> fieldsMapping = null;
 	private FIXMLSchema schema = null;
 	private JAXBContext ctx = null;
 	private Unmarshaller unmarshaller = null;
 
-	public Spec() {
+	private Spec() {
 		try {
 			ctx = JAXBContext.newInstance(classes);
 			unmarshaller = ctx.createUnmarshaller();
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public static Spec getInstance() {
+		if (instance == null) {
+			instance = new Spec();
+		}
+		return instance;
 	}
 
 	private InputStream getStream(String file) {
@@ -71,16 +80,16 @@ public class Spec {
 	/**
 	 * @return List of message type objects.
 	 */
-	public List<FIXMessageType> getFIXMessageTypes() {
+	public List<MessageTypeSpec> getFIXMessageTypes() {
 
 		if (messageTypes != null) {
 			return messageTypes;
 		}
 
 		InputStream is = getStream("MsgType.xml");
-		FIXDataRoot wrapper = null;
+		SpecDataRoot wrapper = null;
 		try {
-			wrapper = (FIXDataRoot) unmarshaller.unmarshal(is);
+			wrapper = (SpecDataRoot) unmarshaller.unmarshal(is);
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
 		}
@@ -97,12 +106,12 @@ public class Spec {
 	/**
 	 * @return Name to message type object mapping
 	 */
-	public Map<String, FIXMessageType> getFIXMessageTypesMapping() {
+	public Map<String, MessageTypeSpec> getFIXMessageTypesMapping() {
 		if (messageTypesMapping != null) {
 			return messageTypesMapping;
 		}
 		messageTypesMapping = new HashMap<>();
-		for (FIXMessageType mt : getFIXMessageTypes()) {
+		for (MessageTypeSpec mt : getFIXMessageTypes()) {
 			messageTypesMapping.put(mt.getName(), mt);
 		}
 		return messageTypesMapping;
@@ -111,14 +120,14 @@ public class Spec {
 	/**
 	 * @return List of component objects.
 	 */
-	public List<FIXComponent> getFIXComponents() {
+	public List<ComponentSpec> getFIXComponents() {
 		if (components != null) {
 			return components;
 		}
 		InputStream is = getStream("Components.xml");
-		FIXDataRoot wrapper = null;
+		SpecDataRoot wrapper = null;
 		try {
-			wrapper = (FIXDataRoot) unmarshaller.unmarshal(is);
+			wrapper = (SpecDataRoot) unmarshaller.unmarshal(is);
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
 		}
@@ -133,25 +142,25 @@ public class Spec {
 	/**
 	 * @return Name to component object mapping
 	 */
-	public Map<String, FIXComponent> getFIXComponentsMapping() {
+	public Map<String, ComponentSpec> getFIXComponentsMapping() {
 		if (componentsMapping != null) {
 			return componentsMapping;
 		}
 		componentsMapping = new HashMap<>();
-		for (FIXComponent c : getFIXComponents()) {
+		for (ComponentSpec c : getFIXComponents()) {
 			componentsMapping.put(c.getName(), c);
 		}
 		return componentsMapping;
 	}
 
-	public List<FIXField> getFIXFields() {
+	public List<FieldSpec> getFIXFields() {
 		if (fields != null) {
 			return fields;
 		}
 		InputStream is = getStream("Fields.xml");
-		FIXDataRoot wrapper = null;
+		SpecDataRoot wrapper = null;
 		try {
-			wrapper = (FIXDataRoot) unmarshaller.unmarshal(is);
+			wrapper = (SpecDataRoot) unmarshaller.unmarshal(is);
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
 		}
@@ -166,12 +175,12 @@ public class Spec {
 	/**
 	 * @return Name to component object mapping
 	 */
-	public Map<String, FIXField> getFIXFieldsMapping() {
+	public Map<String, FieldSpec> getFIXFieldsMapping() {
 		if (fieldsMapping != null) {
 			return fieldsMapping;
 		}
 		fieldsMapping = new HashMap<>();
-		for (FIXField c : getFIXFields()) {
+		for (FieldSpec c : getFIXFields()) {
 			fieldsMapping.put(c.getName(), c);
 		}
 		return fieldsMapping;
@@ -188,6 +197,18 @@ public class Spec {
 			throw new RuntimeException(e);
 		}
 		return schema;
+	}
+
+	public ComponentSpec getComponentSpec(String name) {
+		return getFIXComponentsMapping().get(name);
+	}
+
+	public MessageTypeSpec getMessageTypeSpec(String name) {
+		return getFIXMessageTypesMapping().get(name);
+	}
+
+	public FieldSpec getFieldSpec(String name) {
+		return getFIXFieldsMapping().get(name);
 	}
 
 	public static void main(String[] args) {

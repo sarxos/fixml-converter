@@ -5,6 +5,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.sarxos.fixml.spec.Spec;
+import com.sarxos.fixml.spec.fix.FieldSpec;
+
 
 /**
  * FIXML schema field.
@@ -23,6 +26,8 @@ public class FIXMLField extends FIXMLElement {
 
 	@XmlAttribute
 	private int number;
+
+	private transient FieldSpec spec = null;
 
 	@XmlAttribute
 	private String type;
@@ -53,5 +58,12 @@ public class FIXMLField extends FIXMLElement {
 
 	public String getType() {
 		return type;
+	}
+
+	public FieldSpec getSpec() {
+		if (spec == null) {
+			spec = Spec.getInstance().getFieldSpec(getName());
+		}
+		return spec;
 	}
 }

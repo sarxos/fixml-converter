@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "Fields")
-public class FIXField {
+public class FieldSpec {
 
 	@XmlElement(name = "FieldName")
 	private String name;

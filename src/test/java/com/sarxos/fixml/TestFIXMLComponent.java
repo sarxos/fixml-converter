@@ -17,7 +17,7 @@ public class TestFIXMLComponent {
 
 	@BeforeClass
 	public static void setUp() {
-		spec = new Spec();
+		spec = Spec.getInstance();
 	}
 
 	@Test

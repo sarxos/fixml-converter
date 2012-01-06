@@ -23,5 +23,4 @@ public class GroupWrapper {
 	public FIXMLGroup getGroup() {
 		return group;
 	}
-
 }
