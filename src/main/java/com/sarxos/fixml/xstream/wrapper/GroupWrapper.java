@@ -1,4 +1,4 @@
-package com.sarxos.fixml.xstream;
+package com.sarxos.fixml.xstream.wrapper;
 
 import quickfix.Group;
 

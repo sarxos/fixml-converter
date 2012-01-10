@@ -5,6 +5,7 @@ import quickfix.FieldMap;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
 import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
+import com.sarxos.fixml.xstream.wrapper.ComponentWrapper;
 import com.thoughtworks.xstream.converters.MarshallingContext;
 import com.thoughtworks.xstream.converters.UnmarshallingContext;
 import com.thoughtworks.xstream.io.HierarchicalStreamReader;

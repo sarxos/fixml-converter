@@ -88,10 +88,26 @@ public class FIXMLConverter {
 		if (!initialized) {
 			initialize();
 		}
-		throw new RuntimeException("Not yet implemented");
+
+		FIXMLRoot root = (FIXMLRoot) xstream.fromXML(fixml);
+		return root.getMessage();
 	}
 
+	/**
+	 * Set pretty formatting .
+	 * 
+	 * @param pretty
+	 */
 	public void setPretty(boolean pretty) {
 		this.pretty = pretty;
+	}
+
+	/**
+	 * Is pretty formatting enabled.
+	 * 
+	 * @return true if it is enabled, false otherwise
+	 */
+	public boolean isPretty() {
+		return pretty;
 	}
 }

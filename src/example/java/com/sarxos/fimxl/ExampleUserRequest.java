@@ -25,8 +25,22 @@ public class ExampleUserRequest {
 		req.set(new Password("secretpassword"));
 		req.set(new UserRequestType(UserRequestType.LOGONUSER));
 
+		System.out.println("----------");
+		System.out.println("FIX form:");
+		System.out.println(req);
+
 		// convert FIX login message to proper FIXML form
 		String fixml = converter.toFIXML(req);
+
+		System.out.println("----------");
+		System.out.println("FIXML form:");
 		System.out.println(fixml);
+
+		UserRequest req2 = (UserRequest) converter.toFIX(fixml);
+
+		System.out.println("----------");
+		System.out.println("FIX form again:");
+		System.out.println(req2);
+
 	}
 }

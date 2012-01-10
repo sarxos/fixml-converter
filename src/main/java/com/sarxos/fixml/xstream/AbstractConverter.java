@@ -15,6 +15,8 @@ import com.sarxos.fixml.spec.ml.FIXMLElement;
 import com.sarxos.fixml.spec.ml.FIXMLField;
 import com.sarxos.fixml.spec.ml.FIXMLGroup;
 import com.sarxos.fixml.spec.ml.FIXMLSchema;
+import com.sarxos.fixml.xstream.wrapper.ComponentWrapper;
+import com.sarxos.fixml.xstream.wrapper.GroupWrapper;
 import com.thoughtworks.xstream.converters.Converter;
 import com.thoughtworks.xstream.converters.MarshallingContext;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;

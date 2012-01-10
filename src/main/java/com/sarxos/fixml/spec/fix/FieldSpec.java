@@ -48,4 +48,8 @@ public class FieldSpec {
 	public String toString() {
 		return new StringBuffer(getName()).append('[').append(getAbbr()).append(']').toString();
 	}
+
+	public String getType() {
+		return type;
+	}
 }

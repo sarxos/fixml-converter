@@ -1,6 +1,7 @@
 package com.sarxos.fixml.xstream;
 
 import quickfix.Message;
+import quickfix.fix50.UserRequest;
 
 import com.sarxos.fixml.spec.fix.MessageTypeSpec;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
@@ -46,7 +47,12 @@ public class MessageConverter extends AbstractConverter {
 
 	@Override
 	public Object unmarshal(HierarchicalStreamReader reader, UnmarshallingContext context) {
-		throw new RuntimeException("Not yet implemented");
+
+		String nodeName = reader.getNodeName();
+
+		System.out.println(nodeName);
+
+		return new UserRequest();
 	}
 
 }
