@@ -24,8 +24,8 @@ public class MessageConverter extends AbstractConverter {
 
 	@Override
 	public void marshal(Object source, HierarchicalStreamWriter writer, MarshallingContext context) {
-		Message message = (Message) source;
 
+		Message message = (Message) source;
 		String name = message.getClass().getSimpleName();
 		MessageTypeSpec messageTypeSpec = getMessageTypesMapping().get(name);
 		FIXMLMessage mlMessage = getSchema().getMessageByName(name);
