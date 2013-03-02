@@ -24,15 +24,15 @@ import com.sarxos.fixml.spec.ml.FIXMLSchema;
 public class Spec {
 
 	private static final Class<?>[] classes = new Class[] {
-		ComponentSpec.class,
-		MessageTypeSpec.class,
-		SpecDataRoot.class,
-		FIXMLComponent.class,
-		FIXMLElement.class,
-		FIXMLField.class,
-		FIXMLGroup.class,
-		FIXMLMessage.class,
-		FIXMLSchema.class,
+	ComponentSpec.class,
+	MessageTypeSpec.class,
+	SpecDataRoot.class,
+	FIXMLComponent.class,
+	FIXMLElement.class,
+	FIXMLField.class,
+	FIXMLGroup.class,
+	FIXMLMessage.class,
+	FIXMLSchema.class,
 	};
 
 	private static Spec instance = null;
@@ -41,6 +41,7 @@ public class Spec {
 	private List<ComponentSpec> components = null;
 	private List<FieldSpec> fields = null;
 	private Map<String, MessageTypeSpec> messageTypesMapping = null;
+	private Map<String, MessageTypeSpec> messageAbbrsMapping = null;
 	private Map<String, ComponentSpec> componentsMapping = null;
 	private Map<String, FieldSpec> fieldsMapping = null;
 	private FIXMLSchema schema = null;
@@ -115,6 +116,20 @@ public class Spec {
 			messageTypesMapping.put(mt.getName(), mt);
 		}
 		return messageTypesMapping;
+	}
+
+	/**
+	 * @return Name to message type object mapping
+	 */
+	public Map<String, MessageTypeSpec> getFIXMessageAbbrsMapping() {
+		if (messageAbbrsMapping != null) {
+			return messageAbbrsMapping;
+		}
+		messageAbbrsMapping = new HashMap<>();
+		for (MessageTypeSpec mt : getFIXMessageTypes()) {
+			messageAbbrsMapping.put(mt.getAbbr(), mt);
+		}
+		return messageAbbrsMapping;
 	}
 
 	/**

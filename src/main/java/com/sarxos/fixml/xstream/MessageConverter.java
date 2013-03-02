@@ -1,7 +1,6 @@
 package com.sarxos.fixml.xstream;
 
 import quickfix.Message;
-import quickfix.fix50.UserRequest;
 
 import com.sarxos.fixml.spec.fix.MessageTypeSpec;
 import com.sarxos.fixml.spec.ml.FIXMLComponent;
@@ -49,10 +48,37 @@ public class MessageConverter extends AbstractConverter {
 	public Object unmarshal(HierarchicalStreamReader reader, UnmarshallingContext context) {
 
 		String nodeName = reader.getNodeName();
+		MessageTypeSpec messageTypeSpec = getMessageAbbrsMapping().get(nodeName);
 
-		System.out.println(nodeName);
+		String name = messageTypeSpec.getName();
 
-		return new UserRequest();
+		Class<?> clazz = null;
+		try {
+			clazz = Class.forName(String.format("quickfix.fix50.%s", name));
+		} catch (ClassNotFoundException e) {
+			throw new RuntimeException(e);
+		}
+
+		Message message = null;
+		try {
+			message = (Message) clazz.newInstance();
+		} catch (InstantiationException e) {
+			throw new RuntimeException(e);
+		} catch (IllegalAccessException e) {
+			throw new RuntimeException(e);
+		}
+
+		FIXMLMessage mlMessage = getSchema().getMessageByName(name);
+
+		for (FIXMLElement element : mlMessage.getElements()) {
+			if (element instanceof FIXMLField) {
+				unmarshalField(message, element, reader);
+			} else if (element instanceof FIXMLComponent) {
+				// unmarshalComponent(message, element, reader, context);
+			}
+
+		}
+
+		return message;
 	}
-
 }

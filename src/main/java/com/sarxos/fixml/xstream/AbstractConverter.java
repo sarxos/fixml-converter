@@ -19,6 +19,8 @@ import com.sarxos.fixml.xstream.wrapper.ComponentWrapper;
 import com.sarxos.fixml.xstream.wrapper.GroupWrapper;
 import com.thoughtworks.xstream.converters.Converter;
 import com.thoughtworks.xstream.converters.MarshallingContext;
+import com.thoughtworks.xstream.converters.UnmarshallingContext;
+import com.thoughtworks.xstream.io.HierarchicalStreamReader;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 
 
@@ -27,11 +29,13 @@ public abstract class AbstractConverter implements Converter {
 	private Spec spec = Spec.getInstance();
 	private FIXMLSchema schema = null;
 	private Map<String, MessageTypeSpec> messageTypesMapping = null;
+	private Map<String, MessageTypeSpec> messageAbbrsMapping = null;
 	private Map<String, ComponentSpec> componentsMapping = null;
 	private Map<String, FieldSpec> fieldsMapping = null;
 
 	public AbstractConverter() {
 		this.messageTypesMapping = spec.getFIXMessageTypesMapping();
+		this.messageAbbrsMapping = spec.getFIXMessageAbbrsMapping();
 		this.componentsMapping = spec.getFIXComponentsMapping();
 		this.fieldsMapping = spec.getFIXFieldsMapping();
 		this.schema = spec.getSchema();
@@ -43,6 +47,10 @@ public abstract class AbstractConverter implements Converter {
 
 	public Map<String, MessageTypeSpec> getMessageTypesMapping() {
 		return messageTypesMapping;
+	}
+
+	public Map<String, MessageTypeSpec> getMessageAbbrsMapping() {
+		return messageAbbrsMapping;
 	}
 
 	public Map<String, ComponentSpec> getComponentsMapping() {
@@ -73,6 +81,24 @@ public abstract class AbstractConverter implements Converter {
 			if (field.isRequired()) {
 				throw new RuntimeException("Required field " + fixField + " is missing in message " + name);
 			}
+		}
+	}
+
+	protected void unmarshalField(FieldMap message, FIXMLElement element, HierarchicalStreamReader reader) {
+
+		FIXMLField field = (FIXMLField) element;
+		String name = message.getClass().getSimpleName();
+		FieldSpec fixField = getFieldsMapping().get(field.getName());
+
+		String value = reader.getAttribute(fixField.getAbbr());
+
+		if (value == null) {
+			if (field.isRequired()) {
+				throw new RuntimeException("Required field " + fixField + " is missing in message " + name);
+			}
+			// ignore not required fields
+		} else {
+			message.setString(fixField.getTag(), value);
 		}
 	}
 
@@ -110,6 +136,16 @@ public abstract class AbstractConverter implements Converter {
 			if (hasChildren(fixComponent, innerComponent)) {
 				context.convertAnother(new ComponentWrapper(fixComponent, innerComponent));
 			}
+		}
+	}
+
+	protected void unmarshalComponent(FieldMap fixComponent, FIXMLElement element, HierarchicalStreamReader reader, UnmarshallingContext context) {
+		while (reader.hasMoreChildren()) {
+			reader.moveDown();
+			System.out.println("====");
+			System.out.println(reader.getAttributeCount());
+			System.out.println(reader.getNodeName());
+			reader.moveUp();
 		}
 	}
 

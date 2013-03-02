@@ -2,6 +2,7 @@ package com.sarxos.fimxl;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+import quickfix.Message;
 import quickfix.field.MDEntryType;
 import quickfix.field.MDReqID;
 import quickfix.field.MarketDepth;
@@ -68,8 +69,16 @@ public class ExampleMarketDataRequest {
 		symbols.set(instr);
 		req.addGroup(symbols);
 
+		System.out.println(req);
+
 		// convert FIX login message to proper FIXML form
+
 		String fixml = converter.toFIXML(req);
 		System.out.println(fixml);
+
+		Message message = converter.toFIX(fixml);
+
+		System.out.println(message);
+
 	}
 }
